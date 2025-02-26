@@ -13,7 +13,7 @@ class DiarizationPipeline:
         self,
         model_name="pyannote/speaker-diarization-3.1",
         use_auth_token=None,
-        device: Optional[Union[str, torch.device]] = "cpu",
+        device: Optional[Union[str, torch.device]] = "cuda",
     ):
         if isinstance(device, str):
             device = torch.device(device)
