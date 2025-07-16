@@ -306,7 +306,7 @@ def load_model(
     asr_options: Optional[dict] = None,
     language: Optional[str] = None,
     vad_model: Optional[Vad]= None,
-    vad_method: Optional[str] = "silero", #*
+    vad_method: Optional[str] = "pyannote", #*
     vad_options: Optional[dict] = None,
     model: Optional[WhisperModel] = None,
     task="transcribe",
@@ -355,8 +355,8 @@ def load_model(
         "no_repeat_ngram_size": 0,
         "temperatures": [0.0, 0.2, 0.4], #0.6, 0.8, 1.0], #*
         "compression_ratio_threshold": 2.4,
-        "log_prob_threshold": -8.0, #*
-        "no_speech_threshold": 0.5, #*
+        "log_prob_threshold": -1.0, #*
+        "no_speech_threshold": 0.6, #*
         "condition_on_previous_text": False,
         "prompt_reset_on_temperature": 0.5,
         "initial_prompt": None,
