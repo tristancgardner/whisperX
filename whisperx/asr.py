@@ -353,7 +353,7 @@ def load_model(
         "length_penalty": 1,
         "repetition_penalty": 1,
         "no_repeat_ngram_size": 0,
-        "temperatures": [0.0, 0.2, 0.4], #0.6, 0.8, 1.0], #*
+        "temperatures": [0.0, 0.2, 0.4, 0.6, 0.8, 1.0], #*
         "compression_ratio_threshold": 2.4,
         "log_prob_threshold": -1.0, #*
         "no_speech_threshold": 0.6, #*
